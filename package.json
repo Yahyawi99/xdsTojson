@@ -1,0 +1,17 @@
+{
+  "name": "xsd-to-json",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.1",
+    "xsd2json": "^1.12.22",
+    "xsd2json2": "^1.0.15",
+    "xsd2jsonschema": "^0.3.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

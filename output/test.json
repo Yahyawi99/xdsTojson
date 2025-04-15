@@ -1,0 +1,24 @@
+{
+  "$id": "test.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "This JSON Schema file was generated from test.xsd on Tue Apr 15 2025 04:32:55 GMT+0100 (GMT+01:00).  For more information please see http://www.xsd2jsonschema.org",
+  "description": "Schema tag attributes: xmlns:xs='http://www.w3.org/2001/XMLSchema'",
+  "properties": { "person": { "$ref": "#/definitions/person" } },
+  "type": "object",
+  "anyOf": [{ "required": ["person"] }],
+  "definitions": {
+    "person": {
+      "required": ["firstName", "lastName", "age"],
+      "properties": {
+        "firstName": { "type": "string" },
+        "lastName": { "type": "string" },
+        "age": {
+          "maximum": 2147483647,
+          "minimum": -2147483648,
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    }
+  }
+}
