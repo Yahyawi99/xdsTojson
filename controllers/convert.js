@@ -19,12 +19,10 @@ const convertToJson = async (req, res) => {
       });
       const jsonSchema = convertedSchemas["test.xsd"].getJsonSchema();
       const result = JSON.stringify(jsonSchema);
-      fs.writeFileSync("./output/test.json", result);
+      res.status(200).json({ msg: "success!!", result });
     } catch (error) {
       res.status(400).json({ msg: "Something went wrong please try again!" });
     }
-
-    res.status(200).json({ msg: "success!!" });
   });
 };
 
